@@ -1,11 +1,23 @@
 <mat-toolbar>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
+  <div style="width: 50%; display: flex; padding-left: 40px">
+    <img src="./assets/image/logo.png" alt="" />
+  </div>
+  <div
+    class="menu"
+    style="
+      width: 50%;
+      padding-right: 40px;
+      gap: 15px;
+      display: flex;
+      justify-content: flex-end;
+    "
   >
-    <p>menu</p>
-  </button>
-  <span>My App</span>
+    <span routerLink="/home">Home</span>
+    <span routerLink="/service">Service</span>
+    <span routerLink="/about">About us</span>
+
+    <span routerLink="/other">Other</span>
+  </div>
+
   <span class="example-spacer"></span>
 </mat-toolbar>
