@@ -8,3 +8,22 @@
     {{ tile.text }}
   </mat-grid-tile>
 </mat-grid-list>
+
+<div
+  style="
+    width: 600px;
+    height: 200px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  "
+>
+  <h1 routerLink="dentroHome">
+    Clicca per andare in un altro componente utilizzando router child
+  </h1>
+</div>
+
+<router-outlet></router-outlet>
