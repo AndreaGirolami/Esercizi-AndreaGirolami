@@ -1,1 +1,13 @@
-<p>other works!</p>
+<h1>UTENTI</h1>
+
+<ng-container *ngFor="let utente of utenti">
+  <mat-chip-listbox aria-label="Dog selection">
+    <mat-chip>
+      <img
+        matChipAvatar
+        src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+      />
+      <button mat-button (click)="openDialog(utente)">{{ utente.nome }}</button>
+    </mat-chip>
+  </mat-chip-listbox>
+</ng-container>

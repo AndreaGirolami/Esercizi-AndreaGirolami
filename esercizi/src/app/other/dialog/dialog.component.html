@@ -1,0 +1,10 @@
+<ng-container *ngIf="data?.utenti">
+  <h1 mat-dialog-title>
+    nome:{{ data.utenti.nome }} <br />
+    cognome:{{ data.utenti.cognome }}
+  </h1>
+  <div mat-dialog-content>eta: {{ data.utenti.eta }}</div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</ng-container>
