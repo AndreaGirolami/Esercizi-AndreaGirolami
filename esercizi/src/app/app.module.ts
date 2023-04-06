@@ -8,8 +8,8 @@ import { ServiceComponent } from './service/service.component';
 import { OtherComponent } from './other/other.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
-
 import { DentroHomeComponent } from './home/dentro-home/dentro-home.component';
+import { TabellaComponent } from './service/tabella/tabella.component';
 
 //moduli material
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DialogComponent } from './other/dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -29,16 +31,18 @@ import { MatDialogModule } from '@angular/material/dialog';
     HomeComponent,
     DentroHomeComponent,
     DialogComponent,
+    TabellaComponent,
   ],
   imports: [
     BrowserModule,
-
     BrowserAnimationsModule,
     MatToolbarModule,
     AppRoutingModule,
     MatGridListModule,
     MatChipsModule,
     MatDialogModule,
+    MatButtonModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
