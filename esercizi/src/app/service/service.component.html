@@ -1,7 +1,23 @@
 <div style="display: flex">
-  <div class="es es-a">
-    <h1>esercizio-a</h1>
+  <div>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" [(ngModel)]="name" />
+    <br />
+    <label for="birthdate">Data di nascita:</label>
+    <input type="date" id="birthdate" [(ngModel)]="birthdate" />
+    <br />
+    <br />
+    <p *ngIf="name && birthdate">
+      Ciao {{ name }}, sei nato il {{ birthdate }} e hai vissuto:
+    </p>
+
+    <button (click)="getDifference()">Calcola differenza</button>
+
+    <p *ngIf="totalSeconds">
+      {{ hours }} ore, {{ minutes }} minuti e {{ seconds }} secondi.
+    </p>
   </div>
+
   <div class="es es-a">
     <h1>esercizio-b</h1>
 

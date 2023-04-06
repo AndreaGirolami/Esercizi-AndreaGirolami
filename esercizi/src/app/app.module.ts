@@ -20,6 +20,7 @@ import { DialogComponent } from './other/dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MatTableModule } from '@angular/material/table';
     MatDialogModule,
     MatButtonModule,
     MatTableModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
